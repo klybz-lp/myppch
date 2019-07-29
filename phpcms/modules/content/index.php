@@ -274,7 +274,8 @@ class index {
 			$arrchild_arr = explode(',',$arrchild_arr);
 			array_shift($arrchild_arr);
 			$keywords = $keywords ? $keywords : $setting['meta_keywords'];
-			$SEO = seo($siteid, 0, $title,$setting['meta_description'],$keywords);
+			//$SEO = seo($siteid, 0, $title,$setting['meta_description'],$keywords);
+			$SEO = seo($siteid,$catid,$title,$setting['meta_description'],$keywords);
 			include template('content',$template);
 		}
 	}

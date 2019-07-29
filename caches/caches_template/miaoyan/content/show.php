@@ -1,4 +1,4 @@
-<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header"); ?>
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header_content"); ?>
 <div class="main">
 	<div class="col-left">
     	<div class="crumbs"><a href="<?php echo siteurl($siteid);?>">首页</a><span> &gt; </span><?php echo catpos($catid);?> 正文</div>

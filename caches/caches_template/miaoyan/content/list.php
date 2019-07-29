@@ -1,4 +1,4 @@
-<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header"); ?>
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header_list"); ?>
 <!--main-->
 <div class="main">
 	<div class="col-left">
