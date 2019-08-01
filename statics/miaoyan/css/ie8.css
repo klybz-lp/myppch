@@ -1,0 +1,85 @@
+﻿#e-certify .swiper-slide .expert-item,
+#certify .swiper-slide .expert-item {
+    margin: 10px;
+}
+
+
+.all-project-wrap {
+    background-image:url(../images/bgrgba.png);
+}
+
+.expert-item.active {
+    margin-top: 0 !important;
+}
+
+.expert-item.last-child {
+    padding-right: 0 !important;
+    padding-left: 30px !important;
+}
+
+
+.share-video img {
+    top: auto !important;
+}
+
+
+
+.safe-item .before {
+    width: 14px;
+    height: 14px;
+    background: #660000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.section-title .before {
+    height: 2px;
+    width: 180px;
+    display: inline-block;
+    background: #660000;
+    line-height: 40px;
+    margin-bottom: 9px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.section-title .after {
+    height: 2px;
+    width: 180px;
+    display: inline-block;
+    background: #660000;
+    line-height: 40px;
+    margin-bottom: 9px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.about-me-bar>div>img,
+.expert-bar>div>img,
+.safe-bar>div>img {
+    left: 0 !important;
+}
+
+
+.transformedObject {
+  left: 16px;
+  top: 15px;
+  position: relative;
+/* IE8+ - must be on one line, unfortunately */
+
+
+/* IE6 and 7 */
+
+zoom:0.9;
+-ms-zoom:0.9;
+/*
+* To make the transform-origin be the middle of
+* the object. Note: These numbers
+* are approximations. For more accurate results,
+* use Internet Explorer with this tool.
+*/
+margin-left: -14px;
+margin-top: -6px;
+ }

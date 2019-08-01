@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/**
+ *
+ * @authors liping (you@example.org)
+ * @date    2019-07-20 10:24:28
+ * @version $Id$
+ */
+
+html,body {height: 100%;overflow: hidden;}
+
+/*banner*/
+/*.banner {padding-top: 105px;}*/
+.banner .swiper-slide img {width: 100%;display: block;}
+.banner .swiper-wrapper {font-size: 0;white-space: nowrap;display: block;}
+.banner .swiper-slide {font-size: 16px;white-space: normal;display: inline-block;float: none !important;width: 100%;}
+.banner .swiper-slide img {max-width: 100%;height: auto;box-sizing: border-box;}
+.banner .swiper-container, .swiper-slide {height: 100%;}
+.banner .pagination { position: absolute; z-index: 20; bottom: 10px; width: 100%; text-align: center; }
+.banner .swiper-pagination-switch { display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: #fff; margin: 0 5px; opacity: 1; cursor: pointer; }
+.banner .swiper-active-switch { background: #09ada3; }
+.banner .arrow-left {background: url(/statics/miaoyan/images/arrows.png) no-repeat left top;position: absolute;left: 10px;top: 50%;margin-top: -15px;width: 17px;height: 30px;z-index: 10;}
+.banner .arrow-right { background: url(/statics/miaoyan/images/arrows.png) no-repeat left bottom;position: absolute;right: 10px;top: 50%;margin-top: -15px;width: 17px;height: 30px;z-index: 10;}
+
+/*my_about*/
+.my_about {padding: 50px 0;}
+.my_title {font-size: 32px;color: #5b5a5a;letter-spacing: 5px;text-align: center;position: relative;}
+.my_title::after {content: "";width: 80px;height: 3px;background: #5b5a5a;position: absolute;left: 50%;transform: translateX(-40px);bottom: -8px;}
+.my_about .h3_des {font-size: 35px;line-height: 40px;margin: 20px 0;color: #09ada3;text-align: center;letter-spacing: 10px;}
+.my_about .my_info {font-size: 16px;color: #666;line-height: 30px;text-align: center;}
+
+/*my_service*/
+.my_service {width: 100%;height: 624px;background: url(/statics/miaoyan/images/service_bg.jpg) no-repeat center;}
+.my_service .my_container {width: 1300px;}
+.my_service .my_title {padding-top: 40px;color: #fff;}
+.my_service .my_title::after {background: #fff;}
+.my_service ul {width: 1300px;overflow: hidden;margin-top: 50px;}
+.my_service ul>li {width: 188px;height: 423px;background: #fff;float: left;margin-right: 34px;border-radius: 50px;}
+.my_service ul li:last-child {margin-right: 0;}
+.my_service ul li .service_icon {width: 68px;margin: 20px auto;display: block;}
+.my_service ul li .ftit {width: 153px;margin: 0 auto;}
+.my_service ul li .ftit h3 {font-size: 22px;color: #09cdbd;text-align: center;letter-spacing: 2px;}
+.my_service ul li ol {margin-top: 30px;}
+.my_service ul li ol li {font-size: 18px;color: #262626;text-align: center;margin-top: 8px;}
+.my_service ul li ol.nom {margin-top: 8px;}
+.my_service ul li ol.nom li {margin-top: 5px;}
+
+/*my_case*/
+.my_case {padding: 50px 0;}
+.case_container {width: 1530px;margin: 0 auto;}
+.case_container ul {width: 100%;overflow: hidden;margin-top: 35px;}
+.case_container ul li {width: 497px;height: 293px;position: relative;margin-top: 15px;float: left;background: #333;border: 1px solid #08c19d;box-sizing: content-box;cursor: pointer;}
+.case_container ul li:nth-child(3n-1) {margin-left: 16px;margin-right: 16px;}
+.case_container ul li img {width: 497px;height: 293px;}
+.case_container ul li .mask {width: 497px;height: 293px;position: absolute;left: 0;top: 0;background: rgb(17,176,166,.9);opacity: 0;transition: all .5s;}
+/*自适应内容水平垂直居中*/
+.case_container ul li .case_info {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);/* 1 */display: table;/* 2 */width: -moz-max-content;max-width: 100%;box-sizing: border-box;text-align: center;opacity: 0;}
+.case_container ul li .mask h4 {font-size: 25px;color: #fff;text-align: center;letter-spacing: 10px;border-bottom: 2px solid #fff;position: relative;top: 10px;transition: all 1s;}
+.case_container ul li .mask p {font-size: 16px;color: #fff;text-align: center;position: relative;margin-top: 3px;position: relative;top: -10px;transition: all 1s;}
+.case_container ul li:hover .mask {opacity: 1;}
+.case_container ul li:hover .case_info {opacity: 1;}
+.case_container ul li:hover .mask h4 {transform: translateY(-10px);}
+.case_container ul li:hover .mask p {transform: translateY(10px);}
+.case_more {width: 140px;height: 20px;line-height: 20px;text-align: center;font-size: 14px;color: #666;border: 1px solid #666;border-radius: 20px;margin: 50px auto;}
+.case_more a {display: block;color: #666;}
+
+/*advan*/
+.advan {margin-bottom: 50px;}
+.advan .my_container {margin-top: 10px;}
+.advan .my_container ul li {position: absolute;}
+.advan .my_container ul li:nth-child(1) {left: 60px;top: 56px;}
+.advan .my_container ul li:nth-child(2) {left: 475px;top: 56px;}
+.advan .my_container ul li:nth-child(3) {left: 60px;top: 255px;}
+.advan .my_container ul li:nth-child(4) {left: 475px;top: 255px;}
+.advan .my_container ul li:nth-child(5) {left: 60px;top: 468px;}
+.advan .my_container ul li:nth-child(6) {left: 475px;top: 468px;}
+.advan .my_container ul li h4 {font-size: 17px;color: #333;}
+.advan .my_container ul li p {font-size: 15px;color: #333;margin-top: 5px;width: 218px;line-height: 16px;}
+
+/*my_core*/
+.my_core {width: 100%;height: 871px;background-image: url(/statics/miaoyan/images/core_bg.jpg);background-repeat: no-repeat;background-position: center;background-attachment: fixed;}
+.my_core .my_title {padding-top: 70px;}
+.my_core ul {overflow: hidden;margin-top: 60px;}
+.my_core ul li {width: 443px;height: 613px;float: left;position: relative;}
+.my_core ul li:nth-child(2) {margin: 0 35.5px;}
+.my_core ul li p {width: 443px;height: 50px;line-height: 50px;position: absolute;bottom: 0;left: 0;background: rgba(0,0,0,.7);font-size: 22px;color: #fff;text-align: center;}
+
+/*my_dongtai*/
+.my_dongtai {padding: 50px 0 0 0;}
+.my_dongtai .my_dongtai_main {margin-top: 60px;overflow: hidden;}
+.my_dongtai .my_dongtai_main .my_dongtai_command {width: 712px;height: 383px;float: left;position: relative;}
+.my_dongtai .my_dongtai_main .my_dongtai_command h2 {width: 712px;height: 50px;line-height: 50px;position: absolute;bottom: 0;left: 0;background: rgba(0,0,0,.7);font-size: 18px;text-align: center;}
+.my_dongtai .my_dongtai_main .my_dongtai_command h2 a {color: #fff;}
+.my_dongtai .my_dongtai_main .my_dongtai_command h2 a:hover {color: #09cdbd;}
+.my_dongtai .my_dongtai_main .my_dongtai_article {width: 640px;float: right;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li {height: 100px;margin-bottom: 40px;overflow: hidden;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li .pubtime {width: 70px;height: 120px;border-right: 1px solid #333;float: left;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li .pubtime b {font-size: 18px;color: #2a2a2a;margin-bottom: 10px;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li .pubtime span {font-size: 16px;color: #7e7e7e;padding-left: 14px;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li .article {margin: 0 0 0 90px;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li .article h3 {font-size: 16px;margin-bottom: 5px;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li .article h3 a {color: #2a2a2a;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li .article p {font-size: 15px;color: #7e7e7e;line-height: 20px;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li:hover .pubtime b,
+.my_dongtai .my_dongtai_main .my_dongtai_article li:hover .pubtime span,
+.my_dongtai .my_dongtai_main .my_dongtai_article li:hover h3 a,
+.my_dongtai .my_dongtai_main .my_dongtai_article li:hover p {color: #09cdbd;}
+.my_dongtai .my_dongtai_main .my_dongtai_article li:hover .pubtime {border-right-color: #09cdbd;}
+
+
+/*my_news*/
+.my_news {padding: 50px 0;}
+.my_news_tab {width: 500px;margin: 50px auto;}
+.my_news_tab ul {overflow: hidden;}
+.my_news_tab ul li {width: 120px;height: 40px;line-height: 40px;text-align: center;background: #ccc;font-size: 18px;float: left;cursor: pointer;}
+.my_news_tab ul li:nth-child(2) {margin: 0 50px;}
+.my_news_tab ul li.active {background: #09cdbd;color: #fff;}
+.my_news .my_news_main ul {overflow: hidden;display: none;}
+.my_news .my_news_main ul:nth-of-type(1) {display: block;}
+.my_news .my_news_main ul li {width: 294px;float: left;margin-right: 74px;}
+.my_news .my_news_main ul li:nth-child(4) {margin-right: 0;}
+.thumb h3 {font-size: 18px;margin: 5px 0;}
+.thumb h3 a {color: #2a2a2a;}
+.thumb h3 a:hover,.thumb p a:hover {color: #09cdbd;}
+.thumb p {font-size: 15px;color: #7e7e7e;line-height: 18px;}
